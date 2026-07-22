@@ -1,0 +1,12 @@
+# Ignore all node_modules folders anywhere in the project
+node_modules/
+**/node_modules/
+
+# Ignore local environment variables
+.env
+
+# Ignore build outputs
+dist/
+
+# Ignore Mac system files
+.DS_Store

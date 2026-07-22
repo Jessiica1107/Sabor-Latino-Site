@@ -1,0 +1,144 @@
+/* Style for the footer */
+footer{
+  width:100vw;
+  position: relative;
+  left:50%;
+  right:50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: auto;
+}
+.contact-us {
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.business-hours {
+  margin-bottom: 20px;
+  text-align: left;
+  max-width: 460px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto auto 170px;
+}
+
+.business-hours h3 {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+}
+
+.business-hours pre {
+  line-height: 1.6;
+  font-size: 30px;
+  text-align: left;
+  font-family: inherit;
+  white-space: pre-line; 
+  margin-bottom: 0;
+}
+
+.social-info {
+  text-align: left;
+  max-inline-size: 360px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 170px auto auto;
+}
+
+.social-info h3 {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.social-info p {
+  font-size: 38px;
+  margin-top: 20px;
+  ;
+  margin-bottom: 20px;
+
+}
+
+.social-icons {
+  font-size: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.social-icons a {
+  font-size: 40px;
+  color: rgb(247, 242, 242);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+  text-shadow: 4px 4px 8px black;
+}
+
+.social-icons a:hover {
+  opacity: 0.7;
+}
+
+.social-icons a i {
+  margin-left: 10px;
+  display: inline-block;
+  font-size: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-us {
+    flex-direction: row; 
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .contact-us h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .business-hours, .social-info {
+    margin: 20px auto;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .business-hours pre {
+    text-align: center;
+    font-size: 18px; 
+  }
+
+    .business-hours h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    align-items: center; 
+  }
+
+.social-icons a {
+    font-size: 20px; 
+  }
+
+  .social-info h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .social-info p {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}

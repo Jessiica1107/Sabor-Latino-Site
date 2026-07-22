@@ -1,0 +1,122 @@
+/* styling for shopping cart */
+.cart-container {
+  width: 100%;
+  max-height: 500px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eaeaea;
+  box-sizing: border-box;
+}
+
+.cart-container h2 {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 10px;
+}
+
+#cart-items-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px dashed #eaeaea;
+  font-size: 15px;
+}
+
+.cart-item-price {
+  font-weight: bold;
+  color: #333;
+  margin-left: auto;
+  padding-left: 15px;
+}
+
+.remove-item-btn {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 5px;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.remove-item-btn:hover {
+  color: #c0392b;
+  transform: scale(1.2);
+}
+
+/* Cart Summary & Clear Button */
+.cart-summary {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 2px solid #eaeaea;
+}
+
+.total-price-box {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#clear-cart-btn {
+  width: 100%;
+  background-color: #7a7a7a;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#clear-cart-btn:hover {
+  background-color: #555555;
+}
+
+/* Checkout styling */
+.cart-actions-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+#checkout-btn {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#checkout-btn:hover {
+  background-color: #218838;
+}
+
+.empty-cart-text {
+  text-align: center;
+  color: #666;
+  padding: 10px 0;
+}

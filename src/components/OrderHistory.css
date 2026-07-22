@@ -1,0 +1,93 @@
+.order-history-container {
+  margin-top: 40px;
+  padding: 20px;
+  background: #fdfdfd;
+  border-top: 3px solid #d9534f;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.order-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  overflow: hidden; 
+}
+
+.order-header {
+  display: flex;
+  flex-wrap: wrap;         
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 6px 12px;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+.order-id {
+  font-family: monospace;
+  color: #555;
+  word-break: break-all;   
+  overflow-wrap: break-word;
+  flex: 1 1 auto;
+  min-width: 0;        
+  font-size: 0.85rem;
+}
+
+.order-total {
+  font-weight: bold;
+  color: #27ae60;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.order-item-detail {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
+  margin-bottom: 6px;
+  min-width: 0;
+}
+
+.order-item-detail > span,
+.order-item-detail {
+  word-break: break-word;
+}
+
+.edit-qty-btn {
+  background: none;
+  border: none;
+  color: #2f80ed;
+  cursor: pointer;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.edit-qty-btn:hover {
+  text-decoration: underline;
+}
+
+.cancel-order-btn {
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  width: 100%;               
+  box-sizing: border-box;
+}
+
+.cancel-order-btn:hover {
+  background-color: #962d22;
+}

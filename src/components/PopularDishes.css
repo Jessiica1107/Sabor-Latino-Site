@@ -1,0 +1,82 @@
+/* Style for popular dishes section */
+.popular-dishes h2 {
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.popular-dishes h3 {
+    font-size: 70px;
+    text-align: left;
+    margin-bottom: 70px;
+}
+
+.popular-dishes p {
+    font-size: 35px;
+    line-height: 1.6;
+}
+
+.dish-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 60px;
+
+}
+
+.dish-row img {
+    width: 45%;
+    max-width: 800px;
+    border-radius: 60px;
+    border: 5px solid black;
+    margin: 30px 250px;
+}
+
+.dish-description {
+    width: 45%;
+    margin: 90px 100px;
+
+}
+
+.dish-row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 768px) {
+    .popular-dishes h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
+
+    .dish-row {
+        flex-direction: row !important;
+        gap: 5px;
+        margin-bottom: 50px;
+        width: 90%;
+    }
+
+    .dish-row img {
+        width: 40%;
+        max-width: 100%;
+        border-radius: 20px;
+        margin: 0 auto;
+    }
+
+    .dish-description {
+        width: 100%;
+        text-align: center;
+        margin: 2px 5px 5px 80px;
+    }
+
+    .popular-dishes h3 {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .popular-dishes p {
+        font-size: 16px;
+    }
+}

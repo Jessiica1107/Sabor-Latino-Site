@@ -1,0 +1,72 @@
+/* Style for about us */
+.about-us-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  width: 80%;
+  margin: 100px auto;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.about-us-container h2 {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.about-us-container p {
+  font-size: 30px;
+  line-height: 1.8;
+}
+
+.about-us-img {
+  width: 45%;
+  max-width: 800px;
+  aspect-ratio: 1/1;
+  display: block;
+  border-radius: 10%;
+  object-fit: cover;
+  flex: 1;
+  border: 5px solid black;
+}
+
+.about-us-text {
+  max-width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+
+ .about-us-container {
+    flex-direction: column-reverse;
+    gap: 24px;
+    width: 95%;
+    margin: 40px auto;
+    padding: 16px;
+  }
+
+  .about-us-container h2 {
+    font-size: 30px; 
+    text-align: center;
+  }
+
+  .about-us-container p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .about-us-text {
+    max-width: 100%;
+    text-align:center;
+  }
+
+  .about-us-img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin:0 auto;
+    border-radius: 8px;
+    flex:none;
+    aspect-ratio: auto;
+  }
+}
